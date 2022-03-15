@@ -33,5 +33,12 @@ client.on('message', msg=>{
     }
 })
 
+client.on('message', msg=>{
+    if(msg.content ===  "test"){
+        msg.reply('test-successful.');
+    }
+})
+
+
 
 client.login(process.env.token);
